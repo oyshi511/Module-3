@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📝 Interactive Form - Lesson 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .note {
+      background-color: #e8f4ff;
+      border-left: 5px solid #0077ff;
+      padding: 10px 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    fieldset {
+      margin-top: 15px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: #fff;
+    }
+    input[type="submit"], input[type="reset"] {
+      background-color: #0077ff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #005fcc;
+    }
+  </style>
+</head>
+<body>
+  <h2>🧾 Fill Up the Form, Soldier!</h2>
+
+  <div class="note">
+    <strong>💡 Note:</strong>  
+    Forms collect user input and send it to a server using the <code>&lt;form&gt;</code> tag.  
+    You can use <code>method=\"POST\"</code> to send data securely.  
+    Here we’re using <strong>Formspree</strong> to receive responses easily without coding a backend.
+  </div>
+
+  <!-- Replace the action URL with your actual Formspree link -->
+  <form action="https://formspree.io/f/xyznpzbz" method="POST">
+    <label for="name">Your Name:
+      <input type="text" id="name" name="name" placeholder="Your cute nickname" required>
+    </label>
+
+    <label for="number">Lucky Number:
+      <input type="number" id="number" name="lucky_number" placeholder="Your lucky number">
+    </label>
+
+    <label for="email">Your Email:
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+    </label>
+
+    <fieldset>
+      <legend>Pick your hobbies</legend>
+      <label><input type="radio" value="Reading"> Reading</label>
+      <label><input type="radio" value="Writing"> Writing Story</label>
+      <label><input type="radio" value="Singing"> Singing</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pick one scenery</legend>
+      <label><input type="radio" name="scenery" value="Sunset"> Sunset</label>
+      <label><input type="radio" name="scenery" value="Sunrise"> Sunrise</label>
+      <label><input type="radio" name="scenery" value="Night Sky"> Night Sky</label>
+      <label><input type="radio" name="scenery" value="Full Moon"> Full Moon</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Which one is the funniest?</legend>
+      <label><input type="radio" name="funny_photo" value="Photo 1"><img src="Photos/1.jpg" width="200"></label>
+      <label><input type="radio" name="funny_photo" value="Photo 2"><img src="Photos/2.jpg" width="200"></label>
+      <label><input type="radio" name="funny_photo" value="Photo 3"><img src="Photos/3.jpg" width="200"></label>
+      <label><input type="radio" name="funny_photo" value="Photo 4"><img src="Photos/4.jpg" width="200"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pick your favorite pets</legend>
+      <label><input type="checkbox" name="pets" value="Dog"> Dog</label>
+      <label><input type="checkbox" name="pets" value="Cat"> Cat</label>
+      <label><input type="checkbox" name="pets" value="Bird"> Bird</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Thoughts</legend>
+      <textarea name="thoughts" cols="30" rows="4" placeholder="Write your message here..."></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <div class="note">
+    <strong>✅ Summary:</strong><br>
+    • <b>&lt;form&gt;</b> collects input data.<br>
+    • <b>action</b> → where to send data (Formspree link).<br>
+    • <b>method=\"POST\"</b> → sends data securely.<br>
+    • <b>&lt;label&gt;</b> connects text with inputs.<br>
+    • <b>&lt;fieldset&gt;</b> + <b>&lt;legend&gt;</b> → group related inputs.<br>
+    • <b>type</b> attribute changes input purpose (<code>text</code>, <code>number</code>, <code>radio</code>, etc).<br>
+    • Use <b>placeholder</b> for hints and <b>required</b> for must-fill fields.<br>
+    • Styling makes your form clean and user-friendly.
+  </div>
+</body>
+</html>
