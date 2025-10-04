@@ -1,61 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5</title>
-    <style>
-        nav > ul > li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav li > a {
-            text-decoration: none;
-            color: black;
-        }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-        }
-        #arti {
-            text-align: center;
-        }
-        figure{
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌐 HTML5 Semantic Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .note {
+      background-color: #e8f4ff;
+      border-left: 5px solid #0077ff;
+      padding: 10px 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    nav > ul > li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav li > a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    nav {
+      text-align: center;
+      background-color: #e4e4e4;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+    figure {
+      text-align: center;
+    }
+    #arti {
+      text-align: center;
+    }
+    img {
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <head>
-<nav>
-    <ul type="none">
-        <li><a href="Photos/">Photos</a></li>
-        <li><a href="lesson1.html">Lessons</a></li>
-        <li><a href="Video/SaveTik.co_7533930013079457067-hd.mp4">Videos</a></li>
-        <li><a href="Audio/videoplayback.m4a">Audio</a></li>
-        <li><a href="https://www.crazygames.com/">Games</a></li>
-    </ul>
-</nav>
-    </head>
-    <main>
-<article>
-    <header id="arti">
-      <h2>All solder forward</h2> 
-      <p>At 5 am <time datetime="2030-03-09">March 09,2030</time></p> 
-      
+  <h1>🌍 HTML5 Semantic Elements</h1>
 
-    </header>
-    <figure>
-        <img src="Photos/0551d1bd-b746-489b-9835-f53457b2a591.jpg" alt="" width="400px">
-        <figcaption>A beautiful girl and butterfly. </figcaption>
+  <div class="note">
+    <strong>💡 Note:</strong>  
+    Semantic elements in HTML5 describe the **meaning and structure** of content, making pages easier for both developers and browsers to understand.  
+    Examples include <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>.
+  </div>
+
+  <h2>🔗 Navigation Bar</h2>
+  <p class="note">
+    The <code>&lt;nav&gt;</code> tag defines navigation links to other pages or sections.  
+    The list items are displayed inline using CSS.
+  </p>
+
+  <nav>
+    <ul type="none">
+      <li><a href="Photos/">Photos</a></li>
+      <li><a href="lesson1.html">Lessons</a></li>
+      <li><a href="Video/SaveTik.co_7533930013079457067-hd.mp4">Videos</a></li>
+      <li><a href="Audio/videoplayback.m4a">Audio</a></li>
+      <li><a href="https://www.crazygames.com/">Games</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <header id="arti">
+        <h2>All Soldiers Forward</h2>
+        <p>At 5 AM <time datetime="2030-03-09">March 09, 2030</time></p>
+      </header>
+
+      <div class="note">
+        <strong>🧠 About Article Section:</strong><br>
+        The <code>&lt;article&gt;</code> tag represents a self-contained piece of content —  
+        for example, a blog post, news article, or story.  
+        Inside it, <code>&lt;header&gt;</code> can contain the title, author, or publish date.
+      </div>
+
+      <figure>
+        <img src="Photos/0551d1bd-b746-489b-9835-f53457b2a591.jpg" alt="A girl with butterfly" width="400px">
+        <figcaption>A beautiful girl and a butterfly.</figcaption>
       </figure>
-      <section>Learn learn learn larnnnnnnnnnnnnnn</section>
-      <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et iusto aspernatur veritatis vero placeat, doloremque a aut delectus beatae perspiciatis magni dolores nisi, perferendis voluptatum illo voluptates ducimus sapiente sequi.</section>
-      <section>Pika Pika Pikachu</section>
-</article>
-    </main>
-    <footer>
-<small>&copy; Pikachu 2006 me</small>
-    </footer>
+
+      <section>
+        <p>Learn, learn, learn — never stop learning!</p>
+      </section>
+      <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae perspiciatis magni dolores nisi perferendis voluptatum illo voluptates ducimus sapiente sequi.</p>
+      </section>
+      <section>
+        <p>Pika Pika Pikachu ⚡</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <small>&copy; 2006 Pikachu Me</small>
+  </footer>
+
+  <div class="note">
+    <strong>✅ Summary:</strong><br>
+    • <b>&lt;header&gt;</b> → Introduces content or navigation.<br>
+    • <b>&lt;nav&gt;</b> → Contains site navigation links.<br>
+    • <b>&lt;main&gt;</b> → Represents the main content of the page.<br>
+    • <b>&lt;article&gt;</b> → Self-contained content (like a blog post).<br>
+    • <b>&lt;section&gt;</b> → Divides content into logical parts.<br>
+    • <b>&lt;figure&gt;</b> + <b>&lt;figcaption&gt;</b> → Used for images with captions.<br>
+    • <b>&lt;footer&gt;</b> → Footer section of the page.<br>
+    • <b>&lt;time&gt;</b> → Defines a date or time in machine-readable format.
+  </div>
 </body>
 </html>
