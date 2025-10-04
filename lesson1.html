@@ -1,22 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Video</title>
-    <style>
-        h2{
-            text-align: center;
-        }
-        video, audio {
-    display: block; /* Makes the element a block-level element */
-    margin: auto;   /* Centers the block-level element horizontally */
-  }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎧 Audio & Video - Lesson 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .note {
+      background-color: #e8f4ff;
+      border-left: 5px solid #0077ff;
+      padding: 10px 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    audio, video, iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
-<body >
-    <h2>Audio Video</h2>
-    <audio src="Audio/videoplayback.m4a" controls></audio>
-    <video src="Video/SaveTik.co_7533930013079457067-hd.mp4" controls height="300"></video>
+<body>
+  <h1>🎬 Audio & Video in HTML</h1>
+
+  <div class="note">
+    <strong>💡 Note:</strong>  
+    HTML5 allows embedding audio and video directly on a web page using the  
+    <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags.  
+    These make your website more interactive and modern.  
+    You can center them using CSS:  
+    <code>display: block;</code> and <code>margin: auto;</code>.
+  </div>
+
+  <h2>🎵 Audio Example</h2>
+  <p class="note">
+    The <code>&lt;audio&gt;</code> tag is used to add sound files.  
+    The <code>controls</code> attribute shows play/pause buttons.
+  </p>
+  <audio src="Audio/videoplayback.m4a" controls></audio>
+
+  <h2>🎥 Video Example</h2>
+  <p class="note">
+    The <code>&lt;video&gt;</code> tag embeds video files.  
+    You can control size with <code>height</code> and <code>width</code> attributes.
+  </p>
+  <video src="Video/SaveTik.co_7533930013079457067-hd.mp4" controls height="300"></video>
+
+  <h2>📺 YouTube Video Embed</h2>
+  <p class="note">
+    To add a YouTube video, use the <code>&lt;iframe&gt;</code> tag with the video’s embed link.  
+    Add <code>allowfullscreen</code> for full-screen support.
+  </p>
+  <iframe width="460" height="315" src="https://www.youtube.com/embed/RCO1NWm3_eI?si=ZoUVtW86ZmxiM-1j"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+
+  <div class="note">
+    <strong>✅ Summary:</strong><br>
+    • <b>&lt;audio&gt;</b> → Adds sound files. Use <code>controls</code> for play/pause.<br>
+    • <b>&lt;video&gt;</b> → Adds videos with <code>controls</code>, <code>width</code>, and <code>height</code>.<br>
+    • <b>&lt;iframe&gt;</b> → Embeds YouTube or external videos.<br>
+    • Use <code>display: block;</code> and <code>margin: auto;</code> to center media neatly.
+  </div>
 </body>
 </html>
