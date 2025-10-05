@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📊 HTML Table - Lesson 4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f3ff;
+      color: #222;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .note {
+      background-color: #e8f4ff;
+      border-left: 5px solid #0077ff;
+      padding: 10px 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    caption {
+      font-weight: bold;
+      padding: 10px;
+      caption-side: top;
+    }
+    th, td {
+      border: 1px solid #3498db;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #41a0df;
+      color: white;
+    }
+    tfoot td {
+      background-color: #ecf0f1;
+      font-weight: bold;
+    }
+    ul {
+      width: 80%;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1> HTML Table</h1>
+
+  <div class="note">
+    <strong>💡 Note:</strong>  
+    Tables are used to display structured data in rows and columns.  
+    The main elements are:  
+    <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code>.
+  </div>
+
+  <table>
+    <caption>Employee Salary Table</caption>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Full Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Bill Gates</td>
+        <td>Microsoft</td>
+        <td>$1000</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Steve Jobs</td>
+        <td>Apple</td>
+        <td>$1200</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Larry Page</td>
+        <td>Google</td>
+        <td>$1100</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Mark Zuckerberg</td>
+        <td>Facebook</td>
+        <td>$1300</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Total Employees: 4</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div class="note">
+    <strong>📘 Explanation of Table Tags:</strong><br>
+    • <b>&lt;table&gt;</b> → Defines the table container.<br>
+    • <b>&lt;caption&gt;</b> → Adds a title above the table.<br>
+    • <b>&lt;thead&gt;</b> → Table header (usually contains <b>&lt;th&gt;</b> for headings).<br>
+    • <b>&lt;tbody&gt;</b> → Main data content (rows of info).<br>
+    • <b>&lt;tfoot&gt;</b> → Footer area for totals or summary.<br>
+    • <b>&lt;tr&gt;</b> → Table Row.<br>
+    • <b>&lt;th&gt;</b> → Header Cell (bold and centered by default).<br>
+    • <b>&lt;td&gt;</b> → Table Data Cell.
+  </div>
+
+  <div class="note">
+    <strong>✅ Useful Tips:</strong><br>
+    • <code>border-collapse: collapse;</code> merges table borders neatly.<br>
+    • <code>cellpadding</code> adds space inside each cell.<br>
+    • <code>cellspacing</code> adds space between cells.<br>
+    • <code>colspan</code> lets one cell span across multiple columns.<br>
+    • Type <b>td*4</b> in VS Code → it instantly creates 4 table data cells.
+  </div>
+</body>
+</html>
