@@ -1,26 +1,64 @@
-/* Navigation Menu Styling */
+/* 🌼 Base Navigation Bar */
 nav > ul {
-    display: flex;                /* Makes the list items align horizontally */
-    justify-content: center;      /* Centers the nav bar */
-    list-style-type: none;        /* Removes bullet points */
-    background-color: #f0f8ff;    /* Light background for nav */
-    padding: 10px;
-    border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
 }
 
 nav li {
-    margin: 0 10px;              /* Space between each item */
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+  position: relative;
+  margin: 0 10px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
 }
 
 nav li a {
-    text-decoration: none;       /* Removes underline */
-    color: black;
-    font-weight: 600;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 
 nav li:hover {
-    background-color: lightblue;  /* Changes background on hover */
-    border-radius: 50px;          /* Soft pill shape */
+  background-color: rgb(200, 230, 239);
+  border-radius: 50px;
+}
+
+/* 🌸 Dropdown Menu Styling */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(89, 156, 201);
+  list-style-type: none;
+  padding: 8px 0;
+  border-radius: 10px;
+  min-width: 100px;
+  z-index: 100;
+}
+
+.dropdown li {
+  padding: 8px 15px;
+  text-align: center;
+}
+
+.dropdown li a {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+nav li:hover > .dropdown {
+  display: block;
+}
+
+/* Hover effect for dropdown items */
+.dropdown li:hover {
+  background-color: rgb(91, 136, 175);
+  border-radius: 8px;
 }
