@@ -1,0 +1,73 @@
+html {
+  font-size: 16px;
+}
+/* 🌸 Global Styles */
+body {
+  background-color: rgb(251, 241, 241);
+  font-family: 'Handlee', cursive;
+  font-style: oblique;
+  margin: 0;
+  font-size:  1.3rem;
+}
+
+/* 🌼 Header & Navigation */
+ul {
+  text-align: center;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 20px;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+/* 🌼 Forms */
+form {
+  background-color: rgb(206, 175, 175);
+  border: solid 2px black;
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+/* 🌸 Input & Textarea Styles */
+input,
+textarea {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+
+}
+
+textarea {
+  resize: none;
+}
+
+/* 🌸 Links */
+a {
+  color: rgb(99, 84, 84);
+}
+
+/* 🌸 Layout Sections */
+.t1,
+.t4 {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 5%;        
+  margin: 0 auto;
+}
